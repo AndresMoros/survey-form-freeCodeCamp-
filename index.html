@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Satisfaction Survey</h1>
+    <p id="description">In the following survey you will rate the experience you had as a user of our platform. Please fill in all the details of the form.</p>
+    <form id="survey-form" action="">
+      <p>Personal data</p>
+      <label id="name-label" for="name">Name <input id="name" type="text" name="Name" placeholder="Entire name" required />
+      <label id="email-label" for="email">Email <input id="email" type="email" name="Email" placeholder="Enter your email address" required />
+      <label id="number-label" for="number">Age <input id="number" type="number" name="Age" placeholder="Indicate your age" min="17" max="120" value="17"/>
+
+    <p>What kind of service did you purchase with us?</p>
+      <select id="dropdown">
+        <option>Choose an option</option>
+        <option>Marketing</option>
+        <option>Social Media</option>
+        <option>Coaching</option>
+        <option>Content Moderation</option>
+      </select>
+      <p>Did you have contact with any of our advisors?</p>
+      <label for="yes"><input type="radio" name="advice" id="yes" class="input-radio" value="Yes, I had" checked /> Yes, I had contact with an advisor once or several times<label>
+      <label for="no"><input type="radio" name="advice" id="no" class="input-radio" value="No, I didn't" /> No, I didn't have any contact with any advisors<label>
+      <p>Indicate how you have used our services</p>
+      <label for="contentCreation"><input type="checkbox" value="contentCreation" name="useOfService" id="contentCreation" /> Content creation</label>
+      <label for="communityModer"><input type="checkbox" value="communityModer" name="useOfService" id="communityModer" /> Community Moderation</label>
+      <label for="dmResponse"><input type="checkbox" value="dmResponse" name="useOfService" id="dmResponde" /> Community Moderation</label>
+      <label for="costumerService"><input type="checkbox" value="costumerService" name="useOfService" id="costumerService" /> Costumer Service</label>
+        <p>Describe your experiencice</p>
+      <textarea id="experience" cols="50" rows="4" placeholder="Tell us about your experience"></textarea>
+      <label><input type="checkbox" id="termsAndConditions" value="termsAndConditions" required />I accept the Privacy Terms and Conditions</label>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
